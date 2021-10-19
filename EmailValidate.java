@@ -10,7 +10,7 @@ public class EmailValidate {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Email address : ");
         String getUserInput = sc.next();
-        Pattern pattern = Pattern.compile("^[0-9A-Za-z.]+@bridgelabz");
+        Pattern pattern = Pattern.compile("^abc.[0-9A-Za-z]+@bridgelabz.co");
         Matcher matcher = pattern.matcher(getUserInput);
         while (matcher.find()) {
             flag = 1;
