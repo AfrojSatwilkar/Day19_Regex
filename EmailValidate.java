@@ -4,13 +4,13 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class UC1 {
+public class EmailValidate {
     public void validate() {
         int flag = 0;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Email address : ");
         String getUserInput = sc.next();
-        Pattern pattern = Pattern.compile("^abc.[A-Za-z]+@bridgelabz.co$");
+        Pattern pattern = Pattern.compile("^[0-9A-Za-z.]+@bridgelabz");
         Matcher matcher = pattern.matcher(getUserInput);
         while (matcher.find()) {
             flag = 1;
